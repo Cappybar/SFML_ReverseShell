@@ -37,7 +37,7 @@ rule SFML_ReverseShell {
       $s19 = "operator co_await" fullword ascii
       $s20 = ".data$rs" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 1000KB and
+      uint16(0) == 0x5a4d and
       1 of ($x*) and 4 of them
 }
 
